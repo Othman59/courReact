@@ -38,3 +38,18 @@ switch ($_GET['action']){
         header('Location: Route.php?action=get_restaurants');
         break;
 }
+
+//Plat
+
+require('./Plat.php');
+$plat = new Plat();
+switch ($action) {
+    case 'get_plats':
+        $plats = $plat->getAllPlat();
+        // Utilisez la variable $plats pour faire ce que vous voulez ici
+        break;
+    // Ajoutez d'autres cas pour gérer d'autres actions si nécessaire
+    default:
+        // Cas par défaut si l'action n'est pas reconnue
+        break;
+}
