@@ -3,7 +3,7 @@ include ('header.php');
 ?>
 <div class="container">
     <div class="d-flex justify-content-center">
-        <h1>Modification du restaurant <?php echo $rest['RE_Libelle'] ?></h1>
+        <h1>Modification du Plats <?php echo $rest['RE_Libelle'] ?></h1>
     </div>
     <form action="../Controller/Route.php?action=update_restaurant" method="post">
         <input type="hidden" name="id" value='<?php echo $rest['RE_Id'] ?>'>

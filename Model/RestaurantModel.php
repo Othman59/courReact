@@ -13,7 +13,7 @@ class RestaurantModel
     }
 
     function getAllRestaurants(){
-        $req = $this->bdd->prepare('Select * FROM restaurant');
+        $req = $this->bdd->prepare('Select * FROM plat');
         $req->execute();
 
         return $req->fetchAll((PDO::FETCH_ASSOC));
